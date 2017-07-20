@@ -1,2 +1,1 @@
-# Clicker
-Zombie Clicker by Saromase
+# Zombie Clicker by Saromase
