@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zombie Clicker</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row text-center">
+            <h1>Zombie Clicker</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-3 text-center ">
+                <div class="row">
+                    <span class="glyphicon glyphicon-screenshot title-size" aria-hidden="true"> Zombies Tués</span>
+                </div>
+
+            </div>
+            <div class="col-md-6 text-center ">
+                <div class="row">
+                    <span class="glyphicon glyphicon-exclamation-sign title-size" aria-hidden="true"> Zone Apocalyptique</span>
+                </div>
+            </div>
+            <div class="col-md-3 text-center ">
+                <h2 class="bordure">Armes</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 text-center ">
+                <h3>Nombre total</h3>
+                <span id="zombykill">
+                    <script>
+                        displayAll("zombykill", zombykill);
+                    </script>
+                </span>
+                <h3>Point de rage</h3>
+                <span id="score">
+                    <script>
+                        displayAll("score", score);
+                    </script>
+                </span>
+                <h3>Multiplicateur</h3>
+                <span id="multiplier">
+                    <script>
+                        displayAll("multiplier", multiplier);
+                    </script>
+                </span>
+            </div>
+            <div class="col-md-6 text-center ">
+                <img src="img/zombie-521243_640.png" alt="Cible" class="img-thumbnail" onclick="" width="40%">
+            </div>
+            <div class="col-md-3 text-center ">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
