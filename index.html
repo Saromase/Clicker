@@ -71,7 +71,35 @@
                 <img src="img/zombie-521243_640.png" alt="Cible" class="img-thumbnail" onclick="hitZomby()" width="40%">
             </div>
             <div class="col-md-3 text-center ">
-
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/001_brush.png" alt="BrushWeapon" class="img-thumbmail">
+                    </div>
+                    <div class="col-md-2">
+                       <p>LVL</p>
+                        <span id="lvlbrush">
+                            <script>
+                                display("lvlbrush", lvlBrush);
+                            </script>
+                        </span>
+                    </div>
+                    <div class="col-md-3">
+                       <p>PRIX</p>
+                        <span id="pricebrush">
+                            <script>
+                                display("pricebrush", priceBrush);
+                            </script>
+                        </span>
+                    </div>
+                    <div class="col-md-3">
+                       <p>ADD</p>
+                        <span id="addbrush" onclick="addBrush()">
+                            <script>
+                                displayUpgrade("addbrush", "arrow-up");
+                            </script>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
