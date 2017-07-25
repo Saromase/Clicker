@@ -1,5 +1,5 @@
 /* Variable */
-var score = 10000000;
+var score = 0;
 var zombykill = 0;
 var multiplier = 1;
 
