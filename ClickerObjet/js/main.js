@@ -1,6 +1,6 @@
 var Clicker = {
-    score: 500,
-    rage: 500,
+    score: 99,
+    rage: 99,
     multiplier: 1,
     displayScore: function () {
         $("#score").text(this.score);
@@ -25,11 +25,18 @@ var Clicker = {
         }
     },
     setNewWeapon: function (price) {
-        var weapon = new Object();
-        weapon.lvl = 1;
-        weapon.kill = 0;
-        weapon.price = price;
-        return weapon;
+        if (price <= this.rage) {
+            this.rage -= price;
+            this.score -= price;
+            var weapon = new Object();
+            weapon.lvl = 1;
+            weapon.kill = 0;
+            weapon.price = price;
+            Clicker.displayScore();
+            return weapon;
+        } else {
+            alert("test");
+        }
     },
     addWeapon: function (variable, price) {
         if (variable.price < this.rage) {
